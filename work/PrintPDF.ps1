@@ -1,7 +1,6 @@
 #This is a PS scrit to print the pdf files in a specif folder then move them to an output
 #2023-02-10 - MJA
 
-
 $date = Get-Date                 #gets date
 $queue = "C:\Testing\Queue"      #file location of input
 $printed = "C:\Testing\Printed"  #file location of output
