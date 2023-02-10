@@ -11,7 +11,7 @@ $items = Get-ChildItem -Path $queue -Filter *.pdf
 write-output $items 
 
 #this is the print function
-foreach ($item in $items) { Start-Process –FilePath $queue\$item –Verb Print -PassThru | %{sleep 10;$_} | kill     }
+foreach ($item in $items) { Start-Process –FilePath $queue\$item –Verb Print -PassThru | %{sleep 10;} }
 
 #this is the move files to que function
 foreach ($item in $items) { Move-Item -Path $queue\$item $printed }
